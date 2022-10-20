@@ -196,7 +196,7 @@ class FromMcr(Macro):
         if self.tabs[-1]["success"]:
             while self.currentLineIndex < self.allLinesCount - 1:
                 if (len(self.tabs) - 1) < currentTabIndex:
-                    # Tab bloğundan çıktığında
+                    # When exit from tab block
                     break
                 else:
                     self.stepForOnlyTabs()
